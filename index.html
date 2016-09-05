@@ -85,7 +85,7 @@
           <span class="nav-item">
             <a class="button is-dark is-outlined" href="#contact">
               <span class="icon">
-                <i class="fa fa-github"></i>
+                <i class="fa fa-envelope"></i>
               </span>
               <span>Contact me</span>
             </a>
@@ -350,24 +350,25 @@
       </div>
 
       <div class="container has-text-centered">
-        <form action="mailto:sayhello@stefanbrummel.de?subject=Nachricht aus Kontaktformular" method="POST">
+        <form action="https://formspree.io/sayhello@stefanbrummel.de" method="POST">
 
           <div class="columns">
 
             <div class="column is-3 is-offset-2">
 
               <p class="control has-icon">
-                <input class="input" type="text" placeholder="Full Name">
+                <input class="input" type="text" name="Name" placeholder="Full Name">
+                <input type="hidden" name="_subject" value="Nachricht aus Kontaktformular" />
                 <i class="fa fa-user"></i>
               </p>
 
               <p class="control has-icon">
-                <input class="input" type="email" placeholder="Email">
+                <input class="input" type="email" name="_replyto" placeholder="Email">
                 <i class="fa fa-envelope"></i>
               </p>
 
               <p class="control has-icon">
-                <input class="input" type="tel" placeholder="Phone">
+                <input class="input" type="tel" name="Telefon" placeholder="Phone">
                 <i class="fa fa-mobile-phone"></i>
               </p>
 
@@ -376,7 +377,7 @@
             <div class="column is-5">
 
               <p class="control has-icon">
-                <textarea class="textarea" placeholder="Message"></textarea>
+                <textarea class="textarea" name="Nachricht" placeholder="Message"></textarea>
                 <i class="fa fa-terminal"></i>
               </p>
 
